@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Quiz, Image Carousel & Jokes</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <header>
+    <h1>SmartZone</h1>
+    <p>Interactive | Responsive</p>
+    <button id="themeToggle">🌙 Dark Mode</button>
+  </header>
+
+  <main class="main-grid">
+    <section class="quiz">
+      <h2>Quiz Time 🧠</h2>
+      <div id="quiz-container">
+        <p id="question"></p>
+        <div id="answers"></div>
+        <button onclick="nextQuestion()">Next</button>
+      </div>
+    </section>
+
+    <section class="carousel">
+      <h2>Image Carousel 🎞️</h2>
+      <div class="carousel-container">
+        <img id="carousel-img" src="https://picsum.photos/id/1015/600/400" alt="carousel image"/>
+        <div class="carousel-controls">
+          <button onclick="prevImage()">Prev</button>
+          <button onclick="nextImage()">Next</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="joke">
+      <h2>Random Joke 😂</h2>
+      <button onclick="getJoke()">Tell Me a Joke</button>
+      <div id="jokeDisplay"></div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
